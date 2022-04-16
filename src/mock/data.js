@@ -9,9 +9,9 @@ export const headData = {
 
 // HERO DATA
 export const heroData = {
-  title: '',
-  name: 'minsu',
-  subtitle: '',
+  title: '안녕하세요. 저는',
+  name: '강민수',
+  subtitle: '에 진심을 다하는',
   cta: '',
 };
 

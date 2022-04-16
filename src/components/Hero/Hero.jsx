@@ -26,10 +26,12 @@ const Header = () => {
       <Container>
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
           <h1 className="hero-title">
-            {title || 'Hi, my name is'}{' '}
-            <span className="text-color-main">{name || 'Your Name'}</span>
-            <br />
+            <span>{title || 'Hi, my name is'}</span>
+            <span className="text-color-main"> 리팩토링 </span>
             {subtitle || "I'm the Unknown Developer."}
+            <br />
+            <span>프론트엔드 개발자 </span>
+            <span className="text-color-main">{name || 'Your Name'}</span> <span>입니다.</span>
           </h1>
         </Fade>
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
