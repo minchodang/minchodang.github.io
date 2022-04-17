@@ -18,10 +18,10 @@ export const heroData = {
 // ABOUT DATA
 export const aboutData = {
   img: 'profile.jpg',
-  paragraphOne: '',
-  paragraphTwo: '',
-  paragraphThree: '',
-  resume: 'https://www.resumemaker.online/es.php', // if no resume, the button will not show up
+  paragraphOne: '방송국 진행팀부터 교육 사이트 관리자까지.',
+  paragraphTwo: '버라이어티 한 일을 즐기다가 이제는.',
+  paragraphThree: '개발에 푹빠져서 다양한 서비스를 만들고 싶은 개발자 강민수입니다.',
+  resume: 'https://drive.google.com/file/d/16ZjCzqUGQTwyprzJx9twibtZ1EnTPtJM/view?usp=sharing', // if no resume, the button will not show up
 };
 
 // PROJECTS DATA
