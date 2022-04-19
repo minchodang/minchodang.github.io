@@ -1,9 +1,10 @@
 import React, { useContext } from 'react';
 import { Container } from 'react-bootstrap';
 import { Link } from 'react-scroll';
+// import FontAwesomeIcon from 'font-awesome';
 import PortfolioContext from '../../context/context';
-import GithubButtons from '../GithubButtons/GithubButtons';
-
+// import GithubButtons from '../GithubButtons/GithubButtons';
+// import { FontAwesomeIcon } from 'fontawesome';
 import { githubButtons } from '../../mock/data';
 
 const Footer = () => {
@@ -24,27 +25,33 @@ const Footer = () => {
             networks.map((network) => {
               const { id, name, url } = network;
               return (
-                <a
-                  key={id}
-                  href={url || 'https://github.com/cobidev/gatsby-simplefolio'}
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  aria-label={name}
-                >
-                  <i className={`fa fa-${name || 'refresh'} fa-inverse`} />
-                </a>
+                <>
+                  <a
+                    key={id}
+                    href={url || ''}
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    aria-label={name}
+                  >
+                    <i className={`fa fa-${name || 'blog'} fa-inverse`} />
+                    {/* <i className="fa-brands fa-blogger" /> */}
+                  </a>
+                </>
               );
             })}
+          <a href="https://velog.io/@minsu8834">
+            <img src="http://m.biyosekkai.com/img/icon_blog_w.png" alt="블로그"></img>
+          </a>
         </div>
         <hr />
         <p className="footer__text">
-          © {new Date().getFullYear()} - Template developed by{' '}
-          <a href="https://github.com/cobidev" target="_blank" rel="noopener noreferrer">
-            Jacobo Martínez
+          © {new Date().getFullYear()}
+          <a href="https://github.com/minchodang" target="_blank" rel="noopener noreferrer">
+            강민수
           </a>
         </p>
 
-        {isEnabled && <GithubButtons />}
+        {/* {isEnabled && <GithubButtons />} */}
       </Container>
     </footer>
   );
