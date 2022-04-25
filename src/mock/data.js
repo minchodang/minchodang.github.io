@@ -22,7 +22,7 @@ export const aboutData = {
   paragraphTwo: '버라이어티 한 일을 즐기다가 이제는.',
   paragraphThree: '개발에 푹빠져, 다양한 서비스를 만들고 싶은.',
   paragraphFour: '프론트엔드 개발자 강민수입니다.',
-  resume: 'https://drive.google.com/file/d/16ZjCzqUGQTwyprzJx9twibtZ1EnTPtJM/view?usp=sharing', // if no resume, the button will not show up
+  resume: 'https://drive.google.com/file/d/1krO8npOO3X_80Tr6gqOpNVtHe4isQt5e/view?usp=sharing', // if no resume, the button will not show up
 };
 
 // PROJECTS DATA
