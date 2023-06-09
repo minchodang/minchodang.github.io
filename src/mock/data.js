@@ -68,7 +68,7 @@ export const projectsData = [
   },
   {
     id: nanoid(),
-    img: 'Winterest-logo.png',
+    img: 'winter.jpg',
     title: '윈터레스트',
     info: '개발 기간: 2022.01.17 -2022.01.28',
     info2: `
