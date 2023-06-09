@@ -49,7 +49,7 @@ export const projectsData = [
   },
   {
     id: nanoid(),
-    img: 'medi.png',
+    img: 'medi.jpg',
     title: '린 다이어트 모바일 문진표',
     info: '개발 기간: 2022.02.14 - 2022.03.10',
     info2: `
@@ -68,7 +68,7 @@ export const projectsData = [
   },
   {
     id: nanoid(),
-    img: 'Winterest.png',
+    img: 'winterest.png',
     title: '윈터레스트',
     info: '개발 기간: 2022.01.17 -2022.01.28',
     info2: `
@@ -84,7 +84,7 @@ export const projectsData = [
   },
   {
     id: nanoid(),
-    img: 'weareneverthat.png',
+    img: 'weareneverthat.jpg',
     title: '위얼네버댓',
     info: '개발 기간: 2021.12.27 -2022.01.07',
     info2: `대표적인 쇼핑몰 사이트인 thisisneverthat을 모티프로 삼아 위얼네버댓이라는 사이트를 개발했습니다.`,
