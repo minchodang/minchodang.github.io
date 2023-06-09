@@ -81,7 +81,7 @@ const Projects = () => {
                         className="cta-btn cta-btn--hero"
                         href={url || '#!'}
                       >
-                        개발 후기
+                        {url === 'https://www.da-gym.co.kr' ? '웹사이트 바로 가기' : '개발 후기'}
                       </a>
 
                       {repo && (

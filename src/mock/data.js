@@ -9,24 +9,44 @@ export const headData = {
 
 // HERO DATA
 export const heroData = {
-  title: '안녕하세요. 저는',
+  title: '안녕하세요. 저는 세상의 다양한 문제를',
   name: '강민수',
-  subtitle: '에 진심을 다하는',
+  subtitle: '로 해결하고 싶은',
   cta: '',
 };
 
 // ABOUT DATA
 export const aboutData = {
-  img: 'profile.jpg',
+  img: 'mylife.jpg',
   paragraphOne: '방송국 진행팀부터 교육 사이트 관리자까지.',
   paragraphTwo: '버라이어티 한 일을 즐기다가 이제는.',
   paragraphThree: '개발에 푹빠져, 다양한 서비스를 만들고 싶은.',
   paragraphFour: '프론트엔드 개발자 강민수입니다.',
-  resume: 'https://drive.google.com/file/d/1krO8npOO3X_80Tr6gqOpNVtHe4isQt5e/view?usp=sharing', // if no resume, the button will not show up
+  resume: 'https://drive.google.com/file/d/1G6IVXWk-IOTbDMv-RruOnijDMQo7bbSH/view?usp=sharing', // if no resume, the button will not show up
+  link: 'https://velog.io/@minsu8834/%EB%82%98%EC%9D%98-%EC%9D%B8%EC%83%9D-%ED%9A%8C%EA%B3%A0%EB%A1%9D.-feat-%EB%82%B4%EA%B0%80-%EA%B0%9C%EB%B0%9C%EC%9D%84-%ED%95%98%EA%B8%B0%EA%B9%8C%EC%A7%80%EC%9D%98-%EC%97%AC%EC%A0%95',
 };
 
 // PROJECTS DATA
 export const projectsData = [
+  {
+    id: nanoid(),
+    img: 'dagym.jpg',
+    title: '다짐 웹',
+    info: '개발 기간: 2022.06.20~ 개발 완료(총 6개월, 현재 유지 보수 중)',
+    info2: `
+    <프로젝트 명: 다짐 웹>`,
+    info3: ` - 기존 앵귤러 다짐 웹 사이트를 next로 전환 및 전체 페이지 프론트엔드 개발 및 유지 보수`,
+    info4: `사용기술: react, nextjs, react-query, emotion, recoil 등.`,
+    // info5: `<담당역할>`,
+    // info6: `- vuejs 기반으로 다이어트 설문지 서베이의 모바일 최적화 ui 구현.`,
+    // info7: `- 사용자 입력 값에 따른 conditional 랜더링 구현.`,
+    // info8: `- rest api 방식을 기반으로 카카오 소셜 로그인 기능 및 db토큰 및 쿠키 처리.`,
+    // info9: ` - 메디스트림 내부 api와 데이터 get, 설문지 데이터 전송 post, 카카오 로그인 post 구현 등 데이터 전송에 관한 작업.`,
+    // info10: ` - 최종 4주 차에 MVP 단계 작업 완료. 추후 별도 구매 도메인으로 배포 예정.`,
+    // info11: ``,
+    url: 'https://www.da-gym.co.kr',
+    repo: '', // if no repo, the button will not show up
+  },
   {
     id: nanoid(),
     img: 'medi.png',

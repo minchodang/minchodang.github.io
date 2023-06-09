@@ -1,13 +1,13 @@
 import React, { useContext, useState, useEffect } from 'react';
 import Fade from 'react-reveal/Fade';
-import { Container, Row, Col, Media } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import Title from '../Title/Title';
 import AboutImg from '../Image/AboutImg';
 import PortfolioContext from '../../context/context';
 
 const About = () => {
   const { about } = useContext(PortfolioContext);
-  const { img, paragraphOne, paragraphTwo, paragraphThree, paragraphFour, resume } = about;
+  const { img, link, paragraphOne, paragraphTwo, paragraphThree, paragraphFour, resume } = about;
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -30,15 +30,7 @@ const About = () => {
           <Col md={6} sm={12}>
             <Fade bottom duration={1000} delay={600} distance="30px">
               <div className="about-wrapper__image">
-                <iframe
-                  width="560"
-                  height="315"
-                  src="https://www.youtube.com/embed/HWUU7bSKzgc"
-                  title="YouTube video player"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                />
+                <AboutImg alt="profile picture" filename={img} />
               </div>
             </Fade>
           </Col>
@@ -59,18 +51,32 @@ const About = () => {
                 <h2 className="about-wrapper__info-text">
                   {paragraphFour || 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.'}
                 </h2>
-                {resume && (
-                  <span className="d-flex mt-3">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="cta-btn cta-btn--resume"
-                      href={resume}
-                    >
-                      이력서 Click
-                    </a>
-                  </span>
-                )}
+                <div className="button-wrapper">
+                  {link && (
+                    <span className="d-flex mt-3">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="cta-btn cta-btn--resume"
+                        href={link}
+                      >
+                        인생이야기 Click
+                      </a>
+                    </span>
+                  )}
+                  {resume && (
+                    <span className="d-flex mt-3">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="cta-btn cta-btn--resume"
+                        href={resume}
+                      >
+                        이력서 Click
+                      </a>
+                    </span>
+                  )}
+                </div>
               </div>
             </Fade>
           </Col>
